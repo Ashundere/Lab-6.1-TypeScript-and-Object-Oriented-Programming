@@ -8,5 +8,10 @@ export class PhysicalProduct extends Product {
     this.weight = weight
     }
 
-
+    getPriceWithTax(){
+        return this.price + (this.price / 10)
+    }
+    get getWeight(): string {
+        return `${this.weight} kg`
+    }
 }
