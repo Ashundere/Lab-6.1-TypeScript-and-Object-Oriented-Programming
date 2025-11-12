@@ -11,8 +11,8 @@ export class DigitalProduct extends Product {
     getPriceWithTax(){
         return this.price
     }
-    
+
     get getFileSize(): string {
-        return `${this.fileSize} mb`
+        return `This product is ${this.fileSize} mb large`
     }
 }

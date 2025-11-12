@@ -12,10 +12,11 @@ export class Product{
     }
 
     displayDetails(): string {
-        return `${this.name} item with a sku of ${this.sku} costs $${this.price}`
+        return `Item: ${this.sku} named ${this.name} costs $${this.price}`
     }
 
-    getPriceWithTax(taxRatePercentage: number): number {
+    getPriceWithTax(): number {
+        let taxRatePercentage : number = 0
        return this.price + (this.price / taxRatePercentage)
     }
 }
